@@ -25,4 +25,4 @@ async function getGeolocation(location: string) {
     }
 }
 
-export default activityFunction;
+export default activityFunction

@@ -4,7 +4,7 @@ import axios from "axios"
 
 const activityFunction: AzureFunction = async function (context: Context): Promise<JSON> {
 
-    const response = await getSearchResult(context.bindingData.type.toString(), context.bindingData.geolocationPoint0.toString(), context.bindingData.geolocationPoint1.toString() )
+    const response = await getSearchResult(context.bindingData.type.toString(), context.bindingData.geolocationPoint0.toString(), context.bindingData.geolocationPoint1.toString())
     return response
 
 }
@@ -25,4 +25,4 @@ async function getSearchResult(type: string, point0: string, point1: string) {
     }
 }
 
-export default activityFunction;
+export default activityFunction
